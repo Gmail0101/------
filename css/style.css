@@ -28,6 +28,15 @@ body{
     padding: 27px 0px;
 }
 
+/* 
+        overflow:hidden
+이걸쓰는데 왜 잡히는지 모르겠네.. 
+
+*/
+.main-overflow{
+    overflow: hidden;
+}
+
 /* 초기화 */
 .gnb::after{
     content:'';
@@ -37,18 +46,30 @@ body{
 	clear:both;
 }
 
+
+/* GNB list */
+.menu-list{
+    display: none;
+    cursor: pointer;
+    float: right;
+    position: absolute;
+    top: 2vh;
+    right: 5vw;
+}
+
+
 /* GNB */
 #header{
     width:100%;
-    height: 89px;
+    height: 10vh;
     position:fixed;
     background-color: #fff;
     z-index: 1000;
 }
 .logo{
     display: inline-block;
-    width:11.7%;
-    padding: 7.5px 0px;
+    /* width:11.7%;
+    padding: 7.5px 0px; */
 }
 nav{
     width:87.7604%;
@@ -61,12 +82,14 @@ nav>ul{
 
 .gnb>li{
     float:left;
-    padding: 27px 5px; 
+    /* padding: 27px 5px;  */
     text-align: center;
     width:130px;
+    line-height: 10vh;
 }
 .gnb>li>a{
-    font-size: 1.3021vw;
+    /* font-size: 1.3021vw; */
+    font-size: 20px;
     font-weight: 800;
     color: var(--main-color);
 }
@@ -75,12 +98,12 @@ nav>ul{
 .sub{
     display: none;
     position: relative;
-    top:25px;
+    top:-5px;
 }
 .sub>li{
     width:100%;
     text-align:center;
-    padding: 5px 0;
+    line-height: 5vh;
     background-color: #fff;
 }
 .sub>li>a{
@@ -114,6 +137,7 @@ nav>ul{
 .visual_img{
     width:100%;
     position: relative;
+    padding-top: 10vh;
 }
 .visual_img>img{width:100%;}
 
@@ -121,7 +145,7 @@ nav>ul{
     position: absolute;
     top:50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-0%);
     text-align: center;
 }
 .visual_title > p{
@@ -136,11 +160,12 @@ nav>ul{
 }
 
 .visual_btn{
-    width:178px;
-    height: 50px;
+    width:25%;
+    /* height: 50px; */
     background-color: #000;
     border-radius: 23px;
-    margin: 63px auto;
+    margin: 0 auto;
+    margin-top: 2vh;
     cursor: pointer;
 }
 .visual_btn>a{
@@ -153,13 +178,29 @@ nav>ul{
 
 
 /* section01 */
+/* .content_title{
+    width:100%;
+    height: 20vh;
+    background-color: pink;
+    position: relative;
+    top:-2vh;
+    transition: 1s;
+}
+.Img-block:hover > .content_title{
+    display: block;
+    top:-20vh;
+    transition: 1s;
+    z-index: 1;
+} */
+
 #section01{
     height: 500px;
 }
 #wrapper{
     width:87.7604%;
     display: block;
-    margin: 30px auto;
+    margin: 0 auto;
+    margin-top: 30px;
 }
 .sec01_img>img{width:100%;}
 
@@ -198,7 +239,8 @@ nav>ul{
 .sec_bg{
     background-color: #F3F3F3;
     width:100%;
-    height: 1124px;
+    padding-bottom: 100px;                  /* 수정 */
+    overflow: hidden;
 }
 
 .sec02_content{
@@ -223,13 +265,14 @@ nav>ul{
 .sec03_title>h1{
     font-size: 3.6458vw;
 }
+
 #sec_impossible{
     width:87.7604%;
-    height: 900px;
 }
 
 .impossible_title>p{
     font-size: 1.3021vw;
+    font-weight: 800;
 }
 
 
@@ -239,6 +282,7 @@ nav>ul{
     width:100%;
     height: 330px;
     background-color: #2A2A2A;
+    margin-top: 10vh;
 }
 .footer_content{
     width:87.7604%;
@@ -293,6 +337,7 @@ nav>ul{
 /*  */
 @media (min-width: 768px) and (max-width:1200px){
     .mt-15{margin-top: 15px;}
+    
 }
 
 
@@ -305,36 +350,121 @@ nav>ul{
     .Images_click>div>img{
         width:310px; height: 210px;
     }
+    .gnb{display: block !important;}
 }
 
 
-
+/* 1200 이하 */
 @media (max-width:1200px){
-    #section01{height: auto;}
+
+    .gnb>li{line-height: 5vh;}
+    .gnb>li>a{font-size: 2.7vw;}
+    .sub>li>a{font-size: 1.7vw;}
+
+
+    #section01{height: auto;}   
     .sec_none{display: none;}
     .sec_block{display: block;}
 
-    #sec_impossible{
-        height:1200px;
+    .gnb{display: none;}
+    .menu-list{display: block !important;}   /* 햄버거 메뉴 */
+    nav{text-align: center;}
+    #header{height: 10vh;}
+
+
+    /* section 01 */
+    .sec_side_01{
+        text-align: center;
+        padding: 25px 0px;
+    }
+    .side_btn{
+        margin: 0 auto;
+        margin-top: 25px;
     }
 
-}
+    .visual_title > em{font-size: 2.0833vw;}
+    .sec_side_01>em{font-size: 2.0833vw;}
+    .impossible_title>p{font-size: 2.0833vw;}
 
-/* col-ph flex 767 */
-@media (max-width:767px){
+    .side_btn>a{font-size: 1.5vw;}
+
+    /* section 03 */
+
+    .sec03_title{
+        margin-top: 100px;
+    }
+
+    /* footer */
     
-    .col-ph{display: flex; justify-content: space-between;}
-    .sec_bg{height: 900px;}     /* 수정해야할 부분 */
-}
+    .footer_nav>div>a{
+        font-size: 1.7vw;
+    }
+    .footer_nav>div{text-align: center;}
+    .tooter_addr>strong{font-size:2.5833vw;}
+    .tooter_addr>p{font-size: 2.0833vw;}
 
+}
 
 
 /* 767이하일 경우 */
 @media (max-width:767px){
-    #sec_impossible{
-        height:2800px;
+    .col-ph{display: flex; justify-content: space-between;}
+    /* .sec_bg{height: 900px;}     수정해야할 부분 */
+
+    .gnb>li{line-height: 5vh;}
+    .gnb>li>a{font-size: 5vw;}
+    .sub>li>a{font-size:4vw;}
+    /* #header{height: 50px;} */
+
+    .logo{ line-height: 10vh;}
+    .logo>img{height: 5vh;}
+    .visual_title{width:100vw;}
+    .visual_title > p{font-size: 6vw;}
+    .visual_title > em{font-size: 3.5vw;}
+    .sec_side_01>em{font-size: 2.1875vw;}
+    .impossible_title>p{font-size: 2.1875vw;}
+
+    .footer_nav>div>a{font-size: 2.1875vw;}
+    .tooter_addr>strong{font-size: 2.5vw;}
+    .tooter_addr>p{font-size: 2.1875vw;}
+
+
+    .visual_btn{
+        width:20vw;
+        height: 3vh;
     }
+    .visual_btn>a{
+        line-height: 3vh;
+        font-size: 2.0833vw;
+    }
+    #sec_space{
+        display: none;
+    }
+
+    .sec_bg{
+        padding-bottom: 2vh;
+    }
+
+    .sec_side_01>p{font-size: 5vw;}
+    .sec_side_01>strong{font-size: 5vw;}
+    .side_btn>a{font-size: 2.5vw;}
+
+    .sec02_title>h1{font-size: 5vw;}
+    .sec03_title>h1{font-size:5vw;}
+
+
+    .sec02_title{padding: 0;}
+    .sec02_slider{margin: 0;}
+    .col-ph{margin-top: 2vh;}
+
+    .sec03_title{margin-top: 5vh; margin-bottom: 0px;}
+    /* .padding-all{padding: 10px 0px;} */
+
+    .impossible_title>p{font-size: 4vw;}
+
+}
+
+
+@media (min-width: 320px) and (max-width:576px){
     
-    #header{height: 50px;}
-    .logo{height: 50px;}
 }
