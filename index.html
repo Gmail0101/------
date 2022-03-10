@@ -9,240 +9,172 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"> <!-- https://icons.getbootstrap.kr/ 부트스트랩 icon 1.7.2 버전 -->
     <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="./css/style.css" rel="stylesheet" type="text/css" />
+    <link href="./css/layout.css" rel="stylesheet" type="text/css" />
+    
+
 </head>
 <body>
+
     <header>
-        <div id="header">
-            <nav>
-                <div class="logo">
-                    <img src="./images/main/logo.png" alt="logo" class="img-width">
+        <div id="menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="logo pull-left">
+                            <img src="./images/logo/logo.png" alt="로고">
+                        </div>
+                        <div>
+                            <ul class="gnb pull-right">
+                                <li class="pull-left"><a href="#">캠핑장소개</a></li>
+                                <li class="pull-left"><a href="#">캠핑시설소개</a></li>
+                                <li class="pull-left"><a href="#">예약안내</a></li>
+                                <li class="pull-left"><a href="#">포토갤러리</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <ul class="gnb">
-                    <li><a href="#">캠핑장소개</a>
-                        <ul class="sub">
-                            <li><a href="#">인사말</a></li>
-                            <li><a href="#">오시는 길</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">캠핑시설</a>
-                        <ul class="sub">
-                            <li><a href="#">A구역</a></li>
-                            <li><a href="#">B구역</a></li>
-                            <li><a href="#">C구역</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">이용안내</a>
-                        <ul class="sub">
-                            <li><a href="#">인사말</a></li>
-                            <li><a href="#">오시는 길</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">예약안내</a>
-                        <ul class="sub">
-                            <li><a href="#">인사말</a></li>
-                            <li><a href="#">오시는 길</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <div class="menu-list off">
-                    <i class="bi-list" style="font-size:4rem"></i>
-                </div>
-            </nav>
-            <!-- <div class="menu-list-link">
-                <h2>gdgd</h2>
-            </div> -->
+            </div>
         </div>
     </header>
-
-
-    <div id="container">
-        <!-- section01 -->
-        <div class="visual_img">
-            <img src="https://via.placeholder.com/1900x900" alt="img">
-            <div class="visual_title">
-                <p>용두산으로 떠나는 <strong>힐링여행</strong></p>
-                <em>야영데크 A구역</em>
-                <div class="visual_btn" onclick="location.href='#'">
-                    <a href="#">more</a>
+    
+    
+    <div class="visualIMG">
+        <img class="MaxIMG hidden-xs hidden-sm" src="./images/main/visualIMG.png" alt="비주얼이미지">
+        <img class="MaxIMG hidden-lg hidden-md hidden-xs" src="./images/main/767_visual.png" alt="이미지">
+        <img class="MaxIMG hidden-lg hidden-md hidden-sm" src="./images/main/320_visual.png" alt="이미지">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 visual-box">
+                    <h1>용두산으로 떠나는<br/><span>힐링여행!</span></h1>
                 </div>
-            </div>
-        </div>
-
-
-        <div id="sec_space">
-            <div id="space">
-                <img src="./images/main/sec_space.png" alt="sec_space">
-            </div>
-        </div>
-
-
-        <div id="wrapper">
-
-
-            <div id="section01">
-                <div id="row">
-                    <div class="col-lg-6 sec01_img">
-                        <img src="https://via.placeholder.com/650x350" alt="img">
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="sec_side_01">
-                            <p>용두산오토캠핑장</p>
-                            <strong>야영데크 A,B구역</strong><br/>
-                            <em>개인텐트를 직접 설치할 수 있는 공간으로 바로 옆 주차공간이 있습니다.</em>
-                            <div class="side_btn text-center" onclick="location.href='#'">
-                                <a href="#">더보기 &gt;</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div id="section01">
-                <div id="row">
-                    <div class="col-lg-6 sec_none">
-                        <div class="sec_side_01">
-                            <p>용두산오토캠핑장</p>
-                            <strong>야영데크 A,B구역</strong><br/>
-                            <em>개인텐트를 직접 설치할 수 있는 공간으로 바로 옆 주차공간이 있습니다.</em>
-                            <div class="side_btn text-center" onclick="location.href='#'">
-                                <a href="#">더보기 &gt;</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 sec01_img">
-                        <img src="https://via.placeholder.com/650x350" alt="img">
-                    </div>
-                    <div class="col-lg-6 sec_block">
-                        <div class="sec_side_01">
-                            <p>용두산오토캠핑장</p>
-                            <strong>야영데크 A,B구역</strong><br/>
-                            <em>개인텐트를 직접 설치할 수 있는 공간으로 바로 옆 주차공간이 있습니다.</em>
-                            <div class="side_btn text-center" onclick="location.href='#'">
-                                <a href="#">더보기 &gt;</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-
-
-        <div id="section02">
-            <div class="sec_bg">
-                <div class="sec02_content">
-                    <div class="sec02_title text-center">
-                        <h1>용두산오토캠핑장 <strong>주변 관광지</strong></h1>
-                    </div>
-                        <div id="row" class="sec02_slider">
-                            <div class="col-lg-9 col-sm-12 Img-block Img_big">
-                                <img src="https://via.placeholder.com/1300x690" alt="img" class="img-width">
-                                <!-- <div class="content_title text-center">
-                                    <h2>ㅎㅇ</h2>
-                                </div> -->
-                            </div>
-                            <div class="col-lg-3 text-center">
-                                <div id="row" class="col-ph Images_click">
-                                    <div class="col-lg-12 col-sm-4 mt-15">
-                                        <img src="https://via.placeholder.com/310x210" alt="img" class="img-width img-thumbnail">
-                                    </div>
-                                    <div class="col-lg-12 col-sm-4 mt-15">
-                                        <img src="https://via.placeholder.com/310x210" alt="img" class="img-width img-thumbnail">
-                                    </div>
-                                    <div class="col-lg-12 col-sm-4 mt-15">
-                                        <img src="https://via.placeholder.com/310x210" alt="img" class="img-width img-thumbnail">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </div>
-
-        <div id="section03">
-            <div class="sec03_content">
-                <div class="sec03_title text-center">
-                    <h1>용두산오토캠핑장 <strong>이용객 준수사항</strong></h1>
-                </div>
-                    <div id="sec_impossible" class="center-block">
-                        <div id="row" class="main-overflow">
-                            <div class="col-lg-4 col-sm-6">
-                                <img src="./images/main/sec03_img_01.png" alt="sec03_img_01" class="img-width">
-                                <div class="text-center padding-all impossible_title">
-                                    <p>타인 사이트 옆 주차금지</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <img src="./images/main/sec03_img_02.png" alt="sec03_img_01" class="img-width">
-                                <div class="text-center padding-all impossible_title">
-                                    <p>밤10시이후 고성방가 금지</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <img src="./images/main/sec03_img_03.png" alt="sec03_img_01" class="img-width-reset">
-                                <div class="text-center padding-all impossible_title">
-                                    <p>밤10시이후 차량 출입금지</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <img src="./images/main/sec03_img_04.png" alt="sec03_img_01" class="img-width">
-                                <div class="text-center padding-all impossible_title">
-                                    <p>폭죽 사용 및 방문객 출입금지</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <img src="./images/main/sec03_img_05.png" alt="sec03_img_01" class="img-width">
-                                <div class="text-center padding-all impossible_title">
-                                    <p>펜션 내 애완견 및 대형견 출입금지</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <img src="./images/main/sec03_img_06.png" alt="sec03_img_01" class="img-width">
-                                <div class="text-center padding-all impossible_title">
-                                    <p>고출력 전열제품 사용금지</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
             </div>
         </div>
     </div>
-    <footer>
-        <div id="footer">
-            <div class="footer_content center-block">
-                <div id="container">
-                    <div id="row">
-                        <div class="footer_nav col-ph">
-                            <div class="col-lg-2 col-md-2 col-sm-4 padding-all">
-                                <a href="#">개인정보처리방침</a>
-                            </div>
-                            <div class="col-lg-2 col-md-2 col-sm-4 padding-all">
-                                <a href="#">이메일무단수집거부</a>
-                            </div>
-                            <div class="col-lg-2 col-md-2 col-sm-4 padding-all">
-                                <a href="#">캠핑장 예약하기</a>
-                            </div>
-                        </div>
+
+
+    <div class="sec_01">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12" style="overflow:hidden;">
+
+                    <div class="col-lg-6 col-md-6">
+                        <img class="MaxIMG" src="./images/main/sec01_img01.png" alt="야영데크">
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 sec_text">
+                        <h2>용두산오토캠핑장</h2>
+                        <span>야영데크 A,B구역</span>
+                        <p>개인텐트를 직접 설치할 수 있는 공간으로 바로 옆 주차공간이 있습니다.</p>
+                        <a href="#">더보기 > </a>
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-12 sec-con-02">
+
+                    <div class="col-lg-6 col-md-6 hidden-lg hidden-md">
+                        <img class="MaxIMG" src="./images/main/sec01_img02.png" alt="야영데크">
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 sec_text">
+                        <h2>용두산오토캠핑장</h2>
+                        <span>야영데크 A,B구역</span>
+                        <p>개인텐트를 직접 설치할 수 있는 공간으로 바로 옆 주차공간이 있습니다.</p>
+                        <a href="#">더보기 > </a>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 hidden-sm hidden-xs">
+                        <img class="MaxIMG" src="./images/main/sec01_img02.png" alt="야영데크">
                     </div>
                 </div>
-                <div class="tooter_addr">
-                    <br/>
-                    <br/>
-                    <strong>시립 용두산오토캠핑장</strong>
-                    <p>
-                        <span>주소</span> : 충청북도 제천시 명암로 1040(모산동) 용두산 오토 캠핑장 
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <span>TEL</span> : 010-9343-6688
-                    </p>
-                    <br/>
-                    <p>Copyright &copy; 2022 용두산오토캠핑장 All rights reserved.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="sec_02">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <div class="col-lg-4 col-md-4">
+                        <img class="MaxIMG hidden-xs hidden-sm" src="./images/main/sec02_img01.png" alt="의림지">
+                        <img class="MaxIMG hidden-lg hidden-md hidden-xs" src="./images/main/767_img01.png" alt="의림지">
+                        <img class="MaxIMG hidden-lg hidden-md hidden-sm" src="./images/main/320_sec02_img01.png" alt="의림지">
+                        
+                    </div>
+
+                    <div class="col-lg-4 col-md-4">
+                        <img class="MaxIMG hidden-xs hidden-sm" src="./images/main/sec02_img02.png" alt="월악산">
+                        <img style="margin:42px 0px;" class="MaxIMG hidden-lg hidden-md hidden-xs" src="./images/main/767_img02.png" alt="월악산">
+                        <img style="margin:42px 0px;" class="MaxIMG hidden-lg hidden-md" src="./images/main/320_sec02_img02.png" alt="월악산">
+                    </div>
+
+                    <div class="col-lg-4 col-md-4">
+                        <img class="MaxIMG hidden-xs hidden-sm" src="./images/main/sec02_img03.png" alt="송계계곡">
+                        <img class="MaxIMG hidden-lg hidden-md hidden-xs" src="./images/main/767_img03.png" alt="송계계곡">
+                        <img class="MaxIMG hidden-lg hidden-md hidden-sm" src="./images/main/320_sec02_img03.png" alt="송계계곡">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sec_03">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 sec03_text">
+                    <h1 class="text-center">찾아오시는길</h1>
+                    <!-- * 카카오맵 - 지도퍼가기 -->
+                    <!-- 1. 지도 노드 -->
+                    <div id="daumRoughmapContainer1646875728725" class="root_daum_roughmap root_daum_roughmap_landing" style="width:100%;"></div>
+                    <p>충청북도 제천시 명암로 1040(모산동) 용두산오토캠핑장</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 ft_menu">
+                    <ul class="pull-left">
+                        <li class="pull-left">개인정보처리방침</li>
+                        <li class="pull-right">캠핑장 예약하기</li>
+                    </ul>
+                </div>
+                <div class="col-lg-12 ft_addr">
+                    <em>시립 용두산 오토캠핑장</em>
+                    <address>
+                        <span>주소</span> : 충청북도 제천시 명암로 1040(모산동) 용두산 오토 캠핑장 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span>TEL</span>:010-9343-6688
+                    </address>
+                    <p>Copyright © 2022 용두산오토캠핑장 All rights reserved.</p>
                 </div>
             </div>
         </div>
     </footer>
+
+
+
     <script src="./js/main.js"></script>        <!-- 메인페이지 -->
     <script src="./js/bootstrap.min.js"></script>
+    <!--
+	2. 설치 스크립트
+	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+    -->
+    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+    <!-- 3. 실행 스크립트 -->
+    <script charset="UTF-8">
+        new daum.roughmap.Lander({
+            "timestamp" : "1646875728725",
+            "key" : "29etu",
+            // "mapWidth" : "1200",
+            "mapHeight" : "400"
+        }).render();
+    </script>
+    
 </body>
 </html>
