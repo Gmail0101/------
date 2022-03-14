@@ -1,0 +1,145 @@
+*{margin:0; padding: 0;}
+:root{
+    --main-color:#333;
+    --color-white:#fff;
+    --footer-color:rgba(255,255,255,0.5);
+}
+/* a 태그 초기화 */
+a{color:var(--main-color)}
+a:hover,a:active,a:visited,a:link{color:var(--main-color); text-decoration: none;}
+
+
+/* li,ol 초기화 */
+ol,li{list-style: none;}
+
+body{
+    font-family: 'NanumSquare', sans-serif;
+    color:var(--main-color);
+}
+
+/* 이미지 크기조절 */
+.MaxIMG{width:100%;}
+
+
+
+
+/* menu */
+#menu{
+    height: 90px;
+    background-color: rgba(255,255,255,0.9);
+    position: absolute;
+    width:100%;
+    z-index: 1;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+.gnb>li{
+    padding: 0px 24px;
+    padding-top: 34px;
+    text-align: center;
+}
+.gnb>li>a{
+    font-size: 20px;
+    font-weight: 900;
+}
+.submenu{display: none;}
+.submenu>li{line-height: 2.3;}
+.submenu>li>a{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.menuBar{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    height: 25px;
+    cursor: pointer;
+    /* margin-top: 35.5px; */
+}
+.menuBar>span{
+    display: block;
+    width:30px;
+    height: 3px;
+    background-color: #666;
+}
+.menuBar>span:nth-child(2){
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+}
+.menuBar>span:nth-child(3){
+    position: absolute;
+    bottom:0;
+}
+
+.logo>img{margin-top: 8px;}
+
+
+.menu_close{
+    display: block;
+    width:30px; height: 30px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+}
+.menu_close>span{
+    width:30px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    top:13px;
+}
+.menu_close>span:nth-child(1){
+    transform: rotate(45deg);
+}
+.menu_close>span:nth-child(2){
+    transform: rotate(-45deg);
+}
+
+.side-close{
+    height: 90px;
+    position: relative;
+}
+
+.sidemenu{
+    width:50%;
+    height: 100vh;
+    background-color: #46C16F;
+    position:absolute;
+    z-index: 999;
+    right:-50%;
+    transition: all 1s;
+    display: none;
+}
+.side{background-color: #20AA5E;}
+.side>li{
+    line-height: 80px;
+    /* border: 1px solid red; */
+    position: relative;
+}
+.side>li>a{
+    color:var(--color-white);
+    font-size: 22px;
+    font-weight: bold;
+    padding-left: 14px;
+}
+.side-lnb{display: none;}
+.side-lnb>li{
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    background-color: white;
+}
+.side-lnb>li>a{
+    font-size: 20px;
+    padding-left: 14px;
+}
+.side-arr{
+    position: absolute;
+    top:30px;
+    right:10%;
+    transform:rotate(90deg);
+}

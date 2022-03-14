@@ -1,0 +1,71 @@
+/* 1200px 이하 디바이스 */
+@media (min-width:992px) and (max-width:1199px){
+    .logo{
+        float: none !important;
+    }
+
+
+}
+/* 768 디바이스  */
+@media (min-width:768px) and (max-width:991px){
+    .logo{
+        float: none !important;
+    }
+
+    
+}
+
+/* 767 이하 디바이스  */
+@media (max-width : 767px) {
+
+    .side>li>a{font-size: 16px;}
+    .side-lnb>li>a{font-size: 16px;}
+    .logo{
+        float: none !important;
+    }
+    .inline-block{display: inline-block !important;}
+    #menu{
+        height: 50px;
+    }
+    .menuBar{transform: translateY(-50%);}
+    .sub-nav>ul{line-height: 56px;}
+    .sub-nav>ul>li>a{font-size: 17px;}
+
+    /* sec01 */
+    .sec01_text,.sec02{margin-top: 70px;}
+    .sec01_text>h2{font-size: 32px;}
+    .sec01_text>p{font-size: 12px;}
+
+    .sec01_img_text>p{font-size: 16px;}
+
+
+    /* sec02 */
+    .sec02_text{top:2%;}
+    .sec02_text>h2{font-size: 32px;}
+    .sec02_text>p{font-size: 12px; line-height: 20px;}
+
+    .sec03_map>h2{font-size: 32px; margin-top: 60px;}
+    .sec03_map>p{font-size: 12px;}
+
+    .bg-green::after{
+        height: 250px;
+    }
+    .root_daum_roughmap .wrap_map{height: 250px !important;}
+
+
+
+
+    .ft_menu::after{margin-top: 56px;}
+    .ft_menu>ul>li{font-size: 12px; margin: 28px 0px;}
+    .ft_addr>em{font-size: 14px;}
+    .ft_addr>address{font-size: 12px;}
+    .ft_addr>p{font-size: 12px;}
+
+    .visual-box{
+        text-align: center;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .visual-box>h1{font-size: 28px;}
+    .visual-box>em{font-size: 12px;}
+}

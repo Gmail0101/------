@@ -1,0 +1,118 @@
+@charset "utf-8";
+@import "../font/font.css"; /* font-family: 'NanumSquare', sans-serif; } */
+@import "../nav.css"; /* 네비게이션 */ 
+@import "../footer.css"; /* 푸터 */
+
+/* visual */
+.visual{position: relative;}
+.visual-box{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    width:auto;
+
+}
+.visual-box>h1{
+    color:var(--color-white);
+    font-size: 50px;
+    font-weight: 900;
+}
+.visual-box>em{
+    font-size: 20px;
+    color:var(--color-white);
+    font-style: normal;
+}
+
+
+/* sub-nav */
+.sub-nav{
+    position: absolute;
+    bottom:-9px;
+    width:100%;
+    left: 0;
+    text-align: center;
+}
+.sub-nav>ul{
+    display: flex;
+    line-height: 64px;
+
+}
+.sub-nav>ul>li{
+    width:100%;
+}
+.sub-nav>ul>li:nth-child(1){background-color: #6EB283;}
+.sub-nav>ul>li:nth-child(2){background-color: rgba(0, 0, 0, 0.5);}
+.sub-nav>ul>li>a{
+    display: block;
+    color:var(--color-white);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+/* sec01 */
+.sec01_text{text-align: center; margin-top: 140px;}
+.sec01_text>h2{
+    font-size: 46px;
+    font-weight: 900;
+    color:#242424;
+}
+.sec01_text>p{
+    font-size: 18px;
+    color:#666666;
+}
+.sec01_text>img{
+    margin: 14px 0px 24px 0px;
+}
+.sec01_img_text{
+    text-align: left;
+}
+.sec01_img_text>p{
+    color:#666666;
+    font-size: 24px;
+
+}
+
+
+/* sec02 */
+.sec02{margin-top:140px; position: relative;}
+.sec02_text{
+    position: absolute;
+    top:10%;
+    color:white;
+    width:auto;
+}
+.sec02_text>h2{
+    font-size: 46px;
+    font-weight: bold;
+}
+.sec02_text>p{
+    font-size: 18px;
+}
+.bg-green{position: relative;}
+.bg-green::after{
+    content: '';
+    display: block;
+    width:100%;
+    height: 400px;
+    background-color: #24A04C;
+    position: absolute;
+    top:0;
+    z-index: -1;
+}
+
+
+/* sec03 bg-green */
+.sec03_map>h2{
+    font-size: 46px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 80px;
+    color:var(--color-white);
+}
+.sec03_map>p{
+    font-size: 24px;
+    font-weight: 900;
+    padding: 24px 0px;
+}

@@ -11,6 +11,10 @@
     .sec_text>h2{font-size: 50px;}
     .sec_text>span{font-size: 50px;}
     .sec_text>p{font-size: 15px;}
+
+    .logo{
+        float: none !important;
+    }
 }
 /* 768 디바이스  */
 @media (min-width:768px) and (max-width:991px){
@@ -26,10 +30,24 @@
     .sec_text>h2{margin-top: 42px;}
 
     .sec_02{margin-top: 140px;}
+
+    .logo{
+        float: none !important;
+    }
 }
 
 /* 767 이하 디바이스  */
 @media (max-width : 767px) {
+    .side>li>a{font-size: 16px;}
+    .side-lnb>li>a{font-size: 16px;}
+    .logo{
+        float: none !important;
+    }
+    .inline-block{display: inline-block !important;}
+    #menu{
+        height: 50px;
+    }
+    .menuBar{transform: translateY(-50%);}
     .visual-box{
         width:100%; 
         top:50%;
@@ -53,7 +71,6 @@
         line-height: 23px;
 
     }
-
     .sec03_text>h1{font-size: 32px;}
     .sec03_text>p{font-size: 12px;}
 
