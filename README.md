@@ -25,3 +25,6 @@
   - info.html ( 이용안내 ) 작업
   - 슬라이더(jdsliderJS) 작업
   - gallery (포토갤러리) 작업
+
+# 캠핑장 03-16 var 4.0.2
+  - facility 페이지 slider IMG 추가
