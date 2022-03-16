@@ -16,8 +16,8 @@ $("header").html(`
                                 </li>
                                 <li class="pull-left"><a href="./facility.html">캠핑시설소개</a>
                                     <ul class="submenu">
-                                        <li><a href="#">편의시설</a></li>
-                                        <li><a href="#">이용안내</a></li>
+                                        <li><a href="./conv.html">편의시설</a></li>
+                                        <li><a href="./info.html">이용안내</a></li>
                                     </ul>
                                 </li>
                                 <li class="pull-left"><a href="#">예약안내</a>
@@ -56,10 +56,10 @@ $("header").html(`
                         <li><a href="./tourist.html">주변관광지</a></li>
                     </ul>
                 </li>
-                <li><a href="#">캠핑시설소개</a><img class="side-arr" src="./images/main/arr.png" alt="화살표">
+                <li><a href="./facility.html">캠핑시설소개</a><img class="side-arr" src="./images/main/arr.png" alt="화살표">
                     <ul class="side-lnb">
-                        <li><a href="#">편의시설</a></li>
-                        <li><a href="#">이용안내</a></li>
+                        <li><a href="./conv.html">편의시설</a></li>
+                        <li><a href="./info.html">이용안내</a></li>
                     </ul>
                 </li>
                 <li><a href="#">예약안내</a><img class="side-arr" src="./images/main/arr.png" alt="화살표">
