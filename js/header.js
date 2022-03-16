@@ -27,7 +27,7 @@ $("header").html(`
                                         <li><a href="#">예약확인</a></li>
                                     </ul>
                                 </li>
-                                <li class="pull-left"><a href="#">포토갤러리</a></li>
+                                <li class="pull-left"><a href="./gallery.html">포토갤러리</a></li>
                             </ul>
 
                             <div class="menuBar hidden-lg">
@@ -69,7 +69,7 @@ $("header").html(`
                         <li><a href="#">예약확인</a></li>
                     </ul>
                 </li>
-                <li><a href="#">포토갤러리</a></li>
+                <li><a href="./gallery.html">포토갤러리</a></li>
             </ul>
         </div>
         `)
