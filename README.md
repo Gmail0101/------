@@ -28,3 +28,7 @@
 
 # 캠핑장 03-16 var 4.0.2
   - facility 페이지 slider IMG 추가
+
+
+# 캠핑장 04-11 var 4.0.3
+ - info 페이지 텍스트 수정
