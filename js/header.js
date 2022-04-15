@@ -20,11 +20,11 @@ $("header").html(`
                                         <li><a href="./info.html">이용안내</a></li>
                                     </ul>
                                 </li>
-                                <li class="pull-left"><a href="#">예약안내</a>
+                                <li class="pull-left"><a href="./reservation.html">예약안내</a>
                                     <ul class="submenu">
-                                        <li><a href="#">주의사항</a></li>
-                                        <li><a href="#">예약하기</a></li>
-                                        <li><a href="#">예약확인</a></li>
+                                        <!-- <li><a href="./reservation.html">주의사항</a></li>  -->
+                                        <li onclick="alert('현재 준비중인 사이트입니다.');"><a href="#">예약하기</a></li>
+                                        <li onclick="alert('현재 준비중인 사이트입니다.');"><a href="#">예약확인</a></li>
                                     </ul>
                                 </li>
                                 <li class="pull-left"><a href="./gallery.html">포토갤러리</a></li>
@@ -62,9 +62,9 @@ $("header").html(`
                         <li><a href="./info.html">이용안내</a></li>
                     </ul>
                 </li>
-                <li><a href="#">예약안내</a><img class="side-arr" src="./images/main/arr.png" alt="화살표">
+                <li><a href="./reservation.html">예약안내</a><img class="side-arr" src="./images/main/arr.png" alt="화살표">
                     <ul class="side-lnb">
-                        <li><a href="#">주의사항</a></li>
+                        <!-- <li><a href="./reservation.html">주의사항</a></li> -->
                         <li><a href="#">예약하기</a></li>
                         <li><a href="#">예약확인</a></li>
                     </ul>

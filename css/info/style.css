@@ -43,6 +43,13 @@
 .sub-nav>ul>li:nth-child(3){background-color: #6EB283;}
 .sub-nav>ul>li:nth-child(1){background-color: rgba(0, 0, 0, 0.5);}
 .sub-nav>ul>li:nth-child(2){background-color: rgba(0, 0, 0, 0.5);}
+
+/* 예약 navbar */
+.re_nav>ul>li:nth-child(1){background-color: #6EB283;}
+.re_nav>ul>li:nth-child(3){background-color: rgba(0, 0, 0, 0.5);}
+/* 예약 navbar */
+
+
 .sub-nav>ul>li>a{
     display: block;
     color:var(--color-white);
