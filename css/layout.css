@@ -73,6 +73,8 @@
     }
     .sec03_text>h1{font-size: 32px;}
     .sec03_text>p{font-size: 12px;}
+    .sec03_text>p:last-child{font-size: 10px;}
+
 
     .ft_menu::after{margin-top: 56px;}
     .ft_menu>ul>li{font-size: 12px; margin: 28px 0px;}

@@ -114,5 +114,6 @@
 .sec03_map>p{
     font-size: 24px;
     font-weight: 900;
-    padding: 24px 0px;
+    padding: 24px 0px 0px 0px;
 }
+.sec03_map>p:last-child{font-size: 18px;}

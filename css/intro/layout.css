@@ -46,6 +46,7 @@
 
     .sec03_map>h2{font-size: 32px; margin-top: 60px;}
     .sec03_map>p{font-size: 12px;}
+    .sec03_map>p:last-child{font-size: 10px}
 
     .bg-green::after{
         height: 250px;
