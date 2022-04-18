@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="./css/intro/style.css" rel="stylesheet" type="text/css" />
+    <link href="./css/intro/layout.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+    <header style="overflow: hidden;">
+
+        <!-- 메뉴 -->
+        <script src="./js/header.js"></script>
+
+    </header>
+
+    <div class="wrap">
+        <div class="visual">
+            <img class="MaxIMG visible-lg" src="./images/intro/intro_visual.png" alt="비주얼이미지">
+            <img class="MaxIMG visible-md visible-sm" src="./images/intro/768_visual.png" alt="비주얼이미지">
+            <img class="MaxIMG visible-xs" src="./images/intro/320_visual.png" alt="비주얼이미지">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 visual-box">
+                        <h1>캠핑장소개</h1>
+                        <em>꿈과 낭만이 있는 용두산 오토캠핑장</em>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <div class="sub-nav">
+                            <ul>
+                                <li><a href="./intro.html">용두산 오토캠핑장</a></li>
+                                <li><a href="./tourist.html">주변 관광지</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-12 sec01_text">
+                <h2>용두산 오토캠핑장</h2>
+                <p>
+                    용두산 오토캠핑장은 제천시 용두산 산림욕장 내 위치하고 있으며, 7,384㎡ 면적에 야영데크 (주차공간) 38면, 카라반 3대,<br/>
+                    체크인하우스(매점, 화장실, 샤워실, 개수대 포함) 1동, 그 밖의 편의시설을 갖추고 있습니다. 
+                    <br/><br/>
+                    그 밖에도 용두산의 수려한 경관을 감상할 수 있는 산책로와 레저시설을 갖추어 삶을 재충전할 수 있는 시간을 보내실 수 있도록 힘쓰고 있습니다.
+                </p>
+                <img class="MaxIMG" src="./images/intro/sec01_img01.png" alt="이미지">
+                <div class="sec01_img_text">
+                    <p>주소 : 충청북도 제천시 명암로 1040(모산동)</p>
+                    <p>개장년도 : 2015년 9월</p>
+                    <p>관리주체 : 제천시청</p>
+                    <p>구역면적 : 7,384m2</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sec02">
+        <img class="MaxIMG visible-lg" src="./images/intro/sec02_img01.png" alt="이미지">
+        <img class="MaxIMG visible-md visible-sm" src="./images/intro/768_sec02_img.png" alt="이미지">
+        <img class="MaxIMG visible-xs" src="./images/intro/320_sec02_img.png" alt="이미지">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 sec02_text">
+                    <h2>푸른 자연 환경 속에서 느끼는 여유</h2>
+                    <p>
+                        캠핑장 주변의 한방 생태숲, 물놀이장, 자연 송림, 야생화 단지는 울창한 수목을 자랑하는 산림욕장 내에 위치하고 있어<br/>
+                        캠핑을 즐기는 방문객들이 다양한 체험활동을 즐길 수 있으며, 차량으로 시내와 15분 이내에 위치, 접근성이 뛰어나<br/>
+                        가족단위 오토캠핑의 명소로 자리 잡을 전망입니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-green">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 sec03_map">
+                        <h2>찾아오시는길</h2>
+
+                        <div id="daumRoughmapContainer1646875728725" class="root_daum_roughmap root_daum_roughmap_landing" style="width:100%;"></div>
+                        <p>충청북도 제천시 명암로 1040(모산동) 용두산오토캠핑장</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <script src="./js/footer.js"></script>
+    </footer>
+
+    <script src="./js/main.js"></script>        <!-- 메인페이지 -->
+    <script src="./js/bootstrap.min.js"></script>
+    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+    <!-- 3. 실행 스크립트 -->
+    <script charset="UTF-8">
+        new daum.roughmap.Lander({
+            "timestamp" : "1646875728725",
+            "key" : "29etu",
+            // "mapWidth" : "1200",
+            "mapHeight" : "400"
+        }).render();
+    </script>
+</body>
+</html>
