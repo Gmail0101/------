@@ -41,3 +41,6 @@
 
 # 캠핑장 04-18 var 4.0.5
  - footerJS 수정
+
+# 캠핑장 04-19 var 4.0.6
+ - visual IMG 수정
