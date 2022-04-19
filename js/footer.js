@@ -8,10 +8,10 @@ $("footer").html(`
                     </ul>
                 </div>
                 <div class="col-lg-12 ft_addr">
-                    <em>시립 용두산 오토캠핑장 (운영자:신용교, 조성국, 김영관)</em>
+                    <em>시립 용두산 오토캠핑장</em>
                     <address>
                         <span>주소</span> : 충청북도 제천시 명암로 1040(모산동) 용두산 오토 캠핑장
-                        <p>TEL:043-652-1000 신용교 조성국 김영관</p>
+                        <p>TEL:043-652-1000<i>신용교 조성국 김영관</i></p>
                     </address>
                     <p>Copyright © 2022 용두산오토캠핑장 All rights reserved.</p>
                 </div>

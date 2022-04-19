@@ -36,7 +36,13 @@ footer{
     color:rgba(255,255,255,0.5);
 }
 .ft_addr>address>span{font-weight: 900;}
+.ft_addr>address>p>i{
+    font-style:normal;
+    font-size: 12px;
+    margin-left: 10px;
+}
 .ft_addr>p{
     color:rgba(255,255,255,0.5);
     font-size: 15px;
 }
+
