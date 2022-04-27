@@ -11,9 +11,46 @@
     <link href="./css/style.css" rel="stylesheet" type="text/css" />
     <link href="./css/layout.css" rel="stylesheet" type="text/css" />
     
+    <style>
+        .popup{
+            position: absolute;
+            z-index: 99;
+            top:20%;
+            left: 10%;
+            background-color: #6EB283;
+        }
+        .popup_close{
+            padding: 10px;
+        }
+        .popup_close > a{
+            color:#fff;
+            font-size: 18px;
+        }
+    </style>
 
 </head>
 <body>
+
+
+    <!-- 팝업창 -->
+    <div class="popup" id="popup">
+        <div class="popupimage">
+            <img src="./images/main/popup.png" alt="팝업이미지">
+        </div>
+        <div class="popup_close">
+            <!-- <input type="checkbox" name="chk" id="chk"> -->
+            <a href="#" class="pull-right" onclick="PopupClose();">닫기</a>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
 
     
     <header style="overflow: hidden;">
@@ -143,6 +180,12 @@
             "mapHeight" : "400"
         }).render();
     </script>
-    
+
+    <!-- 팝업창 끄기 -->
+    <script>
+        function PopupClose(){
+            $("#popup").hide();
+        }
+    </script>
 </body>
 </html>
