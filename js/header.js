@@ -23,8 +23,8 @@ $("header").html(`
                                 <li class="pull-left"><a href="./reservation.html">예약안내</a>
                                     <ul class="submenu">
                                         <!-- <li><a href="./reservation.html">주의사항</a></li>  -->
-                                        <li onclick="alert('현재 준비중인 사이트입니다.');"><a href="#">예약하기</a></li>
-                                        <li onclick="alert('현재 준비중인 사이트입니다.');"><a href="#">예약확인</a></li>
+                                        <li onclick="location.href='http://booking.autopus.co.kr/calendar/v2/22917'" style="cursor: pointer;"><a href="#">예약하기</a></li>
+                                        <li onclick="alert('예약사이트 오른쪽상단에 예약조회 및 취소요청을 확인해주세요.');"><a href="#">예약확인</a></li>
                                     </ul>
                                 </li>
                                 <li class="pull-left"><a href="./gallery.html">포토갤러리</a></li>

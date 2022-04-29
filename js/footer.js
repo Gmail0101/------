@@ -4,7 +4,7 @@ $("footer").html(`
                 <div class="col-lg-12 ft_menu">
                     <ul class="pull-left">
                         <li class="pull-left">개인정보처리방침</li>
-                        <li class="pull-right">캠핑장 예약하기</li>
+                        <li class="pull-right" onclick="location.href='http://booking.autopus.co.kr/calendar/v2/22917'" style="cursor: pointer;">캠핑장 예약하기</li>
                     </ul>
                 </div>
                 <div class="col-lg-12 ft_addr">
