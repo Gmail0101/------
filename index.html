@@ -19,6 +19,8 @@
             left: 10%;
             background-color: #6EB283;
         }
+
+
         .popup_close{
             padding: 10px;
         }
@@ -37,10 +39,26 @@
             color: #6EB283;
             font-weight: 900;
         }
-        .popup_text>p>span{
+        .popup_text>p>span, .popup2_text>p>span{
             color: #6EB283;
             font-weight: bold;
             padding: 0px 5px;
+        }
+
+
+        .popup2{
+            position: absolute;
+            z-index: 100;
+            top:20%;
+            left: 32%;
+            background-color: #6EB283;
+        }
+
+        .popup2_text{
+            background-color: white;
+            padding: 15px;
+            font-size: 18px;
+            width:400px;
         }
     </style>
 
@@ -55,6 +73,22 @@
             <!-- <img src="./images/main/popup.png" alt="팝업이미지"> -->
             <p>저희<span>용두산 캠핑장</span>을 방문에 주셔서 감사합니다.</p>
             <p><span>제천시민</span> 은 당일 현장 주소지 확인 후( 신분증, 면허증, 여권 등 ) PG사 수수료 5%를 제외한 25%를 반환해 드립니다.</p>
+        </div>
+        <div class="popup_close">
+            <!-- <input type="checkbox" name="chk" id="chk"> -->
+            <a href="#" class="pull-right" onclick="PopupClose();">닫기</a>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+
+    <!-- 팝업창 2 -->
+    <div class="popup2" id="popup2">
+        <div class="popupimage popup2_text">
+            <h1 class="text-center">용두산캠핑장 안내문</h1>
+            <!-- <img src="./images/main/popup.png" alt="팝업이미지"> -->
+            <p>저희<span>용두산 캠핑장</span>을 방문에 주셔서 감사합니다.</p>
+            <p><span>8월 예약은 7월 29일</span>부터 가능합니다.</p>
         </div>
         <div class="popup_close">
             <!-- <input type="checkbox" name="chk" id="chk"> -->
