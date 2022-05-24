@@ -1,0 +1,137 @@
+@charset "utf-8";
+@import "./font/font.css"; /* font-family: 'NanumSquare', sans-serif; } */
+@import "./nav.css"; /* 네비게이션 */ 
+@import "./footer.css"; /* 푸터 */
+
+
+/* visualIMG */
+.visualIMG{
+    position: relative;
+}
+.visual-box{
+    width:50%;
+    position: absolute;
+    top:35%;
+}
+.visual-box>h1{
+    font-size: 68px;
+    color: var(--color-white);
+}
+.visual-box>h1>span{font-weight: 900;}
+
+
+
+/* sec01 */
+
+.sec_01{margin-top: 140px;}
+/* .sec_01_first{
+    position: relative;
+} */
+.sec_text{
+    position: relative;
+    top:50px;
+    right:5%;
+    background-color: rgba(110, 178, 131, 0.8);
+    z-index: 999;
+}
+.sec_text_box{
+    padding: 60px 30px;
+    text-align: right;
+}
+.sec_text_box>h2{font-size: 40px; line-height: 1; margin: 0; color:white;}
+.sec_text_box>span{font-size: 48px; font-weight: 900; line-height: 1; color:white;}
+.sec_text_box>p{font-size: 20px; margin-top: 30px; margin-bottom: 42px; color:white;}
+.sec_text_link>a{
+    display: inline-block;
+    color:white;
+    width:95px; height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 22px;
+}
+.sec_text_link{
+    margin-top: 100px;
+}
+.sec_text_02{
+    left: 5%;
+}
+
+
+.sec-con-02{margin-top: 42px;}
+
+.center-text{
+    margin-top: 70px;
+}
+.center-text p{
+    font-size: 24px;
+}
+
+
+/* sec02 */
+.sec_02{margin-top: 100px;}
+.sec_02_title{
+    margin: 30px 0;
+}
+.sec_02_title p{
+    font-size: 40px;
+    font-weight: bold;
+}
+.sec_02_title em{
+    font-size: 24px;
+    font-style: normal;
+}
+
+.sec-02-img-textbox{
+    background-color:#ECECEC;
+    padding: 16px;
+}
+
+.sec-02-img-textbox strong{
+    font-size: 24px;
+}
+
+.sec-02-img-textbox span{
+    display: block;
+    width:48px;
+    height: 4px;
+    background-color: #24A04C;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.sec-02-img-textbox p{
+    font-size: 20px;
+}
+.more-link{
+    text-align: right;
+    padding: 16px;
+}
+.more-link a{
+    font-size: 24px;
+}
+
+
+/* sec03 */
+.sec_03{margin-top: 140px;}
+.sec03_text>h1{font-size: 40px; font-weight: 900;}
+.sec03_text>p{font-size: 24px; font-weight: 900; margin-top: 24px;}
+.sec03_text>p:last-child{font-size: 18px;}
+
+
+
+
+/* sec04 */
+.sec04{
+    margin-top: 100px;
+}
+
+.photo-title p{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.mt-20{
+    margin-top: 20px;
+    overflow: hidden;
+}
