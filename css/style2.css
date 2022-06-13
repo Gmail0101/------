@@ -23,6 +23,18 @@
 
 /* sec01 */
 
+.sec_title{
+    text-align: center;
+}
+.sec_title h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+.sec_title p{
+    font-size: 24px;
+}
+
+
 .sec_01{margin-top: 140px;}
 /* .sec_01_first{
     position: relative;
@@ -113,12 +125,15 @@
 
 
 /* sec03 */
-.sec_03{margin-top: 140px;}
+.sec_03{margin-top: 140px; background-color: #ECECEC;}
 .sec03_text>h1{font-size: 40px; font-weight: 900;}
 .sec03_text>p{font-size: 24px; font-weight: 900; margin-top: 24px;}
 .sec03_text>p:last-child{font-size: 18px;}
 
 
+.photo-content{
+    overflow: hidden;
+}
 
 
 /* sec04 */
@@ -135,3 +150,5 @@
     margin-top: 20px;
     overflow: hidden;
 }
+
+.t-padding{padding-top: 15px; padding-bottom: 15px;}
