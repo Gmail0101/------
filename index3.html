@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" />
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"> <!-- https://icons.getbootstrap.kr/ 부트스트랩 icon 1.7.2 버전 -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+    <link href="./css/layout.css" rel="stylesheet" type="text/css" />
+    
+    <style>
+        .popup{
+            position: absolute;
+            z-index: 99;
+            top:20%;
+            left: 10%;
+            background-color: #6EB283;
+        }
+
+
+        .popup_close{
+            padding: 10px;
+        }
+        .popup_close > a{
+            color:#fff;
+            font-size: 18px;
+        }
+        .popup_text{
+            background-color: white;
+            padding: 15px;
+            font-size: 18px;
+            width:400px;
+        }
+        .popup_text>h1{
+            padding-bottom: 20px;
+            color: #6EB283;
+            font-weight: 900;
+        }
+        .popup_text>p>span, .popup2_text>p>span{
+            color: #6EB283;
+            font-weight: bold;
+            padding: 0px 5px;
+        }
+
+
+        .popup2{
+            position: absolute;
+            z-index: 100;
+            top:20%;
+            left: 32%;
+            background-color: #6EB283;
+        }
+
+        .popup2_text{
+            background-color: white;
+            padding: 15px;
+            font-size: 18px;
+            width:400px;
+        }
+
+
+        .popup3{
+            position: absolute;
+            z-index: 100;
+            top:20%;
+            left: 55%;
+            background-color: #6EB283;
+        }
+
+        .popup3_text{
+            background-color: white;
+            padding: 15px;
+            font-size: 18px;
+            width:400px;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+
+    <div class="popup_wrapper">
+        <!-- 팝업창 -->
+        <div class="popup" id="popup">
+            <div class="popupimage popup_text">
+                <h1 class="text-center">용두산캠핑장 안내문</h1>
+                <!-- <img src="./images/main/popup.png" alt="팝업이미지"> -->
+                <p>저희<span>용두산 캠핑장</span>을 방문에 주셔서 감사합니다.</p>
+                <p><span>제천시민</span> 은 당일 현장 주소지 확인 후( 신분증, 면허증, 여권 등 ) PG사 수수료 5%를 제외한 25%를 반환해 드립니다.</p>
+            </div>
+            <div class="popup_close">
+                <!-- <input type="checkbox" name="chk" id="chk"> -->
+                <a href="#" class="pull-right" onclick="PopupClose();">닫기</a>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+
+        <!-- 팝업창 2 -->
+        <div class="popup2" id="popup2">
+            <div class="popupimage popup_text popup2_text">
+                <h1 class="text-center">용두산캠핑장 안내문</h1>
+                <!-- <img src="./images/main/popup.png" alt="팝업이미지"> -->
+                <p>저희<span>용두산 캠핑장</span>을 방문에 주셔서 감사합니다.</p>
+                <p><span>8월 예약은 7월 11일</span>부터 가능합니다.</p>
+                <p>현재 PG사 예약시스템을 활용하고있으나 결제부분이 원활하지 않아 (신용카드)만 결제가능하여, 홈페이지 및 예약시스템 리뉴얼 중입니다. 이점 양해 부탁드립니다.</p>
+            </div>
+            <div class="popup_close">
+                <!-- <input type="checkbox" name="chk" id="chk"> -->
+                <a href="#" class="pull-right" onclick="PopupClose2();">닫기</a>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+
+        <!-- 팝업창 3 -->
+        <div class="popup3" id="popup3">
+            <div class="popupimage popup_text popup3_text">
+                <h1 class="text-center">용두산캠핑장 안내문</h1>
+                <!-- <img src="./images/main/popup.png" alt="팝업이미지"> -->
+                <p>7월8월카라반은 2박(2박3일)씩만 예약 됩니다</p>
+                <p>관리운영상 카라반 정리를  미쳐 할수가 없어서 입니다</p>
+                <p>많은 양해 부탁 드립니다</p>
+            </div>
+            <div class="popup_close">
+                <!-- <input type="checkbox" name="chk" id="chk"> -->
+                <a href="#" class="pull-right" onclick="PopupClose3();">닫기</a>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    
+    <header style="overflow: hidden;">
+
+        <!-- 메뉴 -->
+        <script src="./js/header.js"></script>
+
+    </header>
+
+    <div class="visualIMG">
+        <img class="MaxIMG hidden-xs hidden-sm" src="./images/main/visualIMG.png" alt="비주얼이미지">
+        <img class="MaxIMG hidden-lg hidden-md hidden-xs" src="./images/main/767_visual.png" alt="이미지">
+        <img class="MaxIMG hidden-lg hidden-md hidden-sm" src="./images/main/320_visual.png" alt="이미지">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 visual-box">
+                    <h1>용두산으로 떠나는<br/><span>힐링여행!</span></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="sec_01">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12" style="overflow:hidden;">
+
+                    <div class="col-lg-6 col-md-6">
+                        <img class="MaxIMG" src="./images/main/sec01_img01.png" alt="야영데크">
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 sec_text">
+                        <h2>용두산오토캠핑장</h2>
+                        <span>야영데크 A,B구역</span>
+                        <p>개인텐트를 직접 설치할 수 있는 공간으로 바로 옆 주차공간이 있습니다.</p>
+                        <a href="./facility.html">더보기 > </a>
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-12 sec-con-02">
+
+                    <div class="col-lg-6 col-md-6 hidden-lg hidden-md">
+                        <img class="MaxIMG" src="./images/main/sec01_img02.png" alt="야영데크">
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 sec_text">
+                        <h2>용두산오토캠핑장</h2>
+                        <span>야영데크 A,B구역</span>
+                        <p>개인텐트를 직접 설치할 수 있는 공간으로 바로 옆 주차공간이 있습니다.</p>
+                        <a href="./facility.html">더보기 > </a>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 hidden-sm hidden-xs">
+                        <img class="MaxIMG" src="./images/main/sec01_img02.png" alt="야영데크">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="sec_02">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <div class="col-lg-4 col-md-4">
+                        <img class="MaxIMG hidden-xs hidden-sm" src="./images/main/sec02_img0001.png" alt="의림지">
+                        <img class="MaxIMG hidden-lg hidden-md hidden-xs" src="./images/main/767_img01.png" alt="의림지">
+                        <img class="MaxIMG hidden-lg hidden-md hidden-sm" src="./images/main/320_sec02_img01.png" alt="의림지">
+                        
+                    </div>
+
+                    <div class="col-lg-4 col-md-4">
+                        <img class="MaxIMG hidden-xs hidden-sm" src="./images/main/sec02_img0002.png" alt="월악산">
+                        <img style="margin:42px 0px;" class="MaxIMG hidden-lg hidden-md hidden-xs" src="./images/main/767_img02.png" alt="월악산">
+                        <img style="margin:42px 0px;" class="MaxIMG hidden-lg hidden-md" src="./images/main/320_sec02_img02.png" alt="월악산">
+                    </div>
+
+                    <div class="col-lg-4 col-md-4">
+                        <img class="MaxIMG hidden-xs hidden-sm" src="./images/main/sec02_img0003.png" alt="송계계곡">
+                        <img class="MaxIMG hidden-lg hidden-md hidden-xs" src="./images/main/767_img03.png" alt="송계계곡">
+                        <img class="MaxIMG hidden-lg hidden-md hidden-sm" src="./images/main/320_sec02_img03.png" alt="송계계곡">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sec_03">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 sec03_text">
+                    <h1 class="text-center">찾아오시는길</h1>
+                    <!-- * 카카오맵 - 지도퍼가기 -->
+                    <!-- 1. 지도 노드 -->
+                    <div id="daumRoughmapContainer1646875728725" class="root_daum_roughmap root_daum_roughmap_landing" style="width:100%;"></div>
+                    <p>충청북도 제천시 명암로 1040(모산동) 용두산오토캠핑장</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <script src="./js/footer.js"></script>
+    </footer>
+
+
+
+    <script src="./js/main.js"></script>        <!-- 메인페이지 -->
+    <script src="./js/bootstrap.min.js"></script>
+    <!--
+	2. 설치 스크립트
+	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+    -->
+    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+    <!-- 3. 실행 스크립트 -->
+    <script charset="UTF-8">
+        new daum.roughmap.Lander({
+            "timestamp" : "1646875728725",
+            "key" : "29etu",
+            // "mapWidth" : "1200",
+            "mapHeight" : "400"
+        }).render();
+    </script>
+
+    <!-- 팝업창 끄기 -->
+    <script>
+        function PopupClose(){
+            $("#popup").hide();
+        }
+        function PopupClose2(){
+            $("#popup2").hide();
+        }
+        function PopupClose3(){
+            $("#popup3").hide();
+        }
+    </script>
+</body>
+</html>
